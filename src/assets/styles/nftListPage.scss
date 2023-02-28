@@ -21,6 +21,7 @@
     font-size: 55px;
   }
   .no-nfts-text {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,5 +38,16 @@
   .no-nfts-image {
     width: 250px;
     padding: 30px;
+  }
+  .input-address-wrapper {
+    padding: 25px 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .button-wrapper {
+      width: 250px;
+      max-width: 250px;
+    }
   }
 }

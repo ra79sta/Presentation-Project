@@ -3,7 +3,7 @@
     <div class="logo" @click="$router.push('/')">{{logoText}}</div>
     <div class="connect-wrapper">
       <app-button
-        v-if="!address"
+        v-if="!networkName"
         buttonClass="connect-metamask"
         text="Connect to a wallet"
         @click="loginOrSignUp()"
@@ -27,13 +27,13 @@ export default {
   setup() {
     const store = useStore()
     const logoText = ref('NFT Watcher')
-    const { loginOrSignUp, address, disconnect } = useUsers(store, ethereumService)
+    const { loginOrSignUp, networkName,disconnect } = useUsers(store, ethereumService)
 
     return {
       loginOrSignUp,
+      networkName,
       disconnect,
       logoText,
-      address,
     }
   }
 }

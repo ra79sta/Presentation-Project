@@ -22,3 +22,60 @@ body,
   height: 2.5rem;
   border-top: 1px solid #ffffff;
 }
+.connect-metamask {
+  width: 100%;
+  background: #5863db;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-right: 15px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: #151d77;
+  }
+}
+.disconnect-metamask {
+  @extend .connect-metamask;
+  background: #e76b45;
+  &:hover {
+    background: #df3a08;
+  }
+}
+.app-input {
+  position: relative;
+  width: 100%;
+}
+.box-input {
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 110%;
+  padding: 12px 22px;
+  box-sizing: border-box;
+  background: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  transition: 0.2s;
+  &::placeholder {
+    color: rgb(207, 191, 191);
+    opacity: 1;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  &:focus-visible {
+    border-radius: 8px !important;
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: -4px 4px 4px rgba(77, 66, 199, 0.15);
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #ffffff !important;
+}
