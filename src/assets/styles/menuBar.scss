@@ -1,0 +1,37 @@
+.menu-bar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.876);
+    border-bottom: 2px solid #ffffff;
+    .logo {
+        color: #ffffff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+.connect-metamask {
+    width: auto;
+    background: #5863db;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background: #151d77;
+    }
+  }
+  .disconnect-metamask {
+    @extend .connect-metamask;
+    background: #e76b45;
+    &:hover {
+      background: #df3a08;
+    }
+  }

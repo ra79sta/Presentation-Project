@@ -1,0 +1,22 @@
+.nft-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background-color: #000000;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid rgb(86, 214, 86);
+  }
+  .image img {
+    width: 140px;
+    height: 140px;
+  }
+  .nft-name {
+    color: #ffffff;
+    padding-top: 10px;
+  }
+}
