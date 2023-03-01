@@ -1,15 +1,14 @@
 .menu-bar {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.876);
-    border-bottom: 2px solid #ffffff;
-    .logo {
-        color: #ffffff;
-        font-size: 25px;
-        cursor: pointer;
-    }
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.876);
+  border-bottom: 2px solid #ffffff;
+  .logo {
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+  }
 }
-

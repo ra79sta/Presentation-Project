@@ -15,7 +15,6 @@
 </template>
 
 <script>
-
 export default {
   props: {
     id: {
@@ -47,7 +46,7 @@ export default {
     labelClass: {
       type: String,
       default: ''
-    },
+    }
   },
   setup() {
     return {}

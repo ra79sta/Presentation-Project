@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import { useRouter } from "vue-router";
+import { useRouter } from 'vue-router'
 export default {
   props: {
     data: {
@@ -20,12 +20,13 @@ export default {
     }
   },
   setup() {
-    const router = useRouter();
+    const router = useRouter()
+    console.log(router)
     const openSingleNft = async (id) => {
-      router.push({ path: `/nft/${id}`});
-    };
+      router.push({ path: `/nft/${id}` })
+    }
     return {
-        openSingleNft,
+      openSingleNft
     }
   }
 }

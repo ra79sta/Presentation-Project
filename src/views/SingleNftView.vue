@@ -8,7 +8,7 @@ export default {
     SingleNft
   },
   setup() {
-    return{}
+    return {}
   }
 }
 </script>

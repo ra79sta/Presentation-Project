@@ -1,6 +1,6 @@
 <template>
   <div class="menu-bar">
-    <div class="logo" @click="$router.push('/')">{{logoText}}</div>
+    <div class="logo" @click="$router.push('/')">{{ logoText }}</div>
     <div class="connect-wrapper">
       <app-button
         v-if="!networkName"
@@ -8,7 +8,12 @@
         text="Connect to a wallet"
         @click="loginOrSignUp()"
       />
-      <app-button v-else buttonClass="disconnect-metamask" text="Disconnect" @click="disconnect()" />
+      <app-button
+        v-else
+        buttonClass="disconnect-metamask"
+        text="Disconnect"
+        @click="disconnect()"
+      />
     </div>
   </div>
 </template>
@@ -27,13 +32,13 @@ export default {
   setup() {
     const store = useStore()
     const logoText = ref('NFT Watcher')
-    const { loginOrSignUp, networkName,disconnect } = useUsers(store, ethereumService)
+    const { loginOrSignUp, networkName, disconnect } = useUsers(store, ethereumService)
 
     return {
       loginOrSignUp,
       networkName,
       disconnect,
-      logoText,
+      logoText
     }
   }
 }

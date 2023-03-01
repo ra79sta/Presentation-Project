@@ -1,8 +1,8 @@
 <template>
-    <div class="back-arrow" @click="$router.push('/')">
-        <div class="arrow-left"></div>
-        <p>BACK</p>
-    </div>
+  <div class="back-arrow" @click="$router.push('/')">
+    <div class="arrow-left"></div>
+    <p>BACK</p>
+  </div>
   <div class="single-nft-wrapper">
     <div class="nft-image">
       <div class="image">

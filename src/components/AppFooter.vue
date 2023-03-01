@@ -1,12 +1,12 @@
 <template>
-<div class="footer-wrapper">
+  <div class="footer-wrapper">
     <p>made by ra79sta</p>
-</div>
+  </div>
 </template>
 <script>
 export default {
-    setup() {
-        return{}
-    },
+  setup() {
+    return {}
+  }
 }
 </script>
