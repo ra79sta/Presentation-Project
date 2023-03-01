@@ -21,7 +21,6 @@ export default {
   },
   setup() {
     const router = useRouter()
-    console.log(router)
     const openSingleNft = async (id) => {
       router.push({ path: `/nft/${id}` })
     }
